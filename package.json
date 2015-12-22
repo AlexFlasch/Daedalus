@@ -1,0 +1,34 @@
+{
+  "name": "daedalus",
+  "version": "0.1.0",
+  "description": "A deployable API server using express.js and my own npm package: crystalys!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --use_strict index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flascher/Daedalus.git"
+  },
+  "keywords": [
+    "dota",
+    "2",
+    "steam",
+    "api",
+    "server",
+    "api",
+    "webapi",
+    "web",
+    "api"
+  ],
+  "author": "flascher",
+  "license": "LGPL-3",
+  "bugs": {
+    "url": "https://github.com/Flascher/Daedalus/issues"
+  },
+  "homepage": "https://github.com/Flascher/Daedalus#readme",
+  "dependencies": {
+    "crystalys": "^0.1.2",
+    "express": "^4.13.3"
+  }
+}

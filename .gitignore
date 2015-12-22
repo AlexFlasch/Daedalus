@@ -1,0 +1,7 @@
+#ignored files
+config.json
+.ntvs_analysis.dat
+
+#ignored directories
+node_modules/
+obj/
