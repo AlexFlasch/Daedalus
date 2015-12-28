@@ -4,7 +4,7 @@
   "description": "A deployable API server using express.js and my own npm package: crystalys!",
   "main": "index.js",
   "scripts": {
-    "start": "node --use_strict index.js"
+    "start": "node ./index.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/Flascher/Daedalus#readme",
   "dependencies": {
+    "chalk": "^1.1.1",
     "crystalys": "^0.1.2",
     "express": "^4.13.3"
   }
