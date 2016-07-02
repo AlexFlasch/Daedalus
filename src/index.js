@@ -1,16 +1,19 @@
 ﻿"use strict";
 
-var express = require('express');
+const express = require('express');
 
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
-var util = require('util');
-var chalk = require('chalk');
-var rp = require('request-promise');
-var apiKey = require('./../config.json').apiKey;
-var Crystalys = require('crystalys');
+const util = require('util');
+const chalk = require('chalk');
+const rp = require('request-promise');
+const config = require('./../config.json');
+const Crystalys = require('crystalys');
 var crystalys = new Crystalys();
-crystalys.setApiKey(apiKey);
+crystalys.setApiKey(config.apiKey);
+
+var domain = config.domain;
+var port = config.port;
 
 function log(msg) {
     console.log(chalk.bold.red('CRIT:') + chalk.white(msg));
@@ -19,8 +22,6 @@ function log(msg) {
 var api = crystalys.getApi();
 
 var app = express();
-
-var port = process.env.PORT || 8080;
 
 app.get('/', function (req, res) {
     res.send('You\'ve reached a Daedalus API server. You shouldn\'t be seeing this... whoops! :^)');

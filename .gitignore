@@ -1,7 +1,13 @@
 #ignored files
 config.json
 .ntvs_analysis.dat
+.jshintrc
+test.json
+jsconfig.json
+*.sln
+
 
 #ignored directories
+.vscode/
 node_modules/
 obj/
