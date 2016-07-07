@@ -22,7 +22,7 @@
     "api"
   ],
   "author": "flascher",
-  "license": "LGPL-3",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Flascher/Daedalus/issues"
   },
