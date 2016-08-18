@@ -1,5 +1,4 @@
 #ignored files
-config.json
 .ntvs_analysis.dat
 .jshintrc
 test.json
