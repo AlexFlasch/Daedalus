@@ -1,6 +1,6 @@
 ﻿{
   "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-  "domain": "localhost",
-  "port":   "7575",
+  "domain": "0.0.0.0",
+  "port":   "80",
   "corsEnabled": false
 }
