@@ -63,7 +63,7 @@ function constructUrl(params) {
 // this is the general function that all endpoints will use
 function requestFunction(schema, endpoint) { // all requests will take a json object of parameters that will be created by DemonEdge client-side
     return function(req, res) {
-        let parameters = req.body.parameters;
+        let parameters = req.body.parameters || {};
 
         // no parameters passed and endpoint is requestable without parameters, then send request, otherwise error.
         if (Object.keys(parameters).length === 0) {
