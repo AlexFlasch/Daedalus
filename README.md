@@ -32,18 +32,16 @@ To configure daedalus-server open up the daedalus folder, then edit config.json.
 You should see these defaults:
 
 ```json
-  
 {
   "apiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
   "domain": "0.0.0.0",
   "port":   "80",
   "corsEnabled": false
 }
-  
 ```
 
 The apiKey should be replaced with your API key you got in Step 1.  
-The domain and port are meant to tell daedalus where its running (these is just passed into Express.js app.listen function)  
+The domain and port are meant to tell daedalus where its running (these are just passed into Express.js app.listen function)  
 The corsEnabled key is `false` by default, but if you intend to connect to your server from a separate domain, you'll need to make this `true`.  
 
 ##Step 3: Start the server
@@ -62,9 +60,7 @@ One of the agreements you accepted with Valve when you signed up for an API key 
 Plus I think making some function calls like:
 
 ```javascript
-
 DemonEdge.api.Match.GetMatchHistory.heroID(1).matchesRequested(30).sendRequest();
-
 ```
 
 is much easier than hard coding a string to `https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v1?key=xxxx&hero_id=1&matches_requested=30`, but maybe that's just me.
